@@ -19,3 +19,4 @@ export PATH
 
 # Setup starship
 eval "$(starship init zsh)"
+eval "$(${HOME}/.local/bin/mise activate zsh)"
