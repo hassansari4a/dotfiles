@@ -11,7 +11,7 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$H
 ## Install starship
 curl -sS https://starship.rs/install.sh | sh
 
-## Install RTX
+## Install mise
 curl https://mise.run | sh
 ```
 
