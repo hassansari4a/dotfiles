@@ -21,7 +21,6 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 # Add zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
-".zshrc" 63L, 1697B
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
