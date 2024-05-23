@@ -5,12 +5,6 @@
 ```
 git clone https://github.com/hassansari4a/dotfiles.git .dotfiles
 
-## Install Zprezto
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-
-## Install starship
-curl -sS https://starship.rs/install.sh | sh
-
 ## Install mise
 curl https://mise.run | sh
 ```
