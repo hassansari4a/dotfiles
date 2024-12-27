@@ -1,2 +1,2 @@
-require("hassan")
-
+require("hassan.core")
+require("hassan.lazy")
