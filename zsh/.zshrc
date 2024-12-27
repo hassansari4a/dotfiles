@@ -68,6 +68,7 @@ alias ls='ls --color'
 alias c='clear'
 alias co='cursor .'
 alias tm='tmux attach-session'
+alias lg='lazygit' 
 
 # Shell integrations
 eval "$(fzf --zsh)"
