@@ -66,7 +66,14 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias c='clear'
+alias co='cursor .'
+alias tm='tmux attach-session'
 
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+
+# The fuck
+eval $(thefuck --alias)
+eval $(thefuck --alias tf)
