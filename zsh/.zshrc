@@ -41,7 +41,7 @@ eval "$(${HOME}/.local/bin/mise activate zsh)"
 # Keybinds
 bindkey -e
 bindkey '^p' history-search-backward
-bindkey '^n' history-search-foreward
+bindkey '^n' history-search-forward
 
 # History
 HISTSIZE=5000
@@ -78,3 +78,4 @@ eval "$(zoxide init --cmd cd zsh)"
 # The fuck
 eval $(thefuck --alias)
 eval $(thefuck --alias tf)
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
