@@ -4,22 +4,26 @@ local wezterm = require("wezterm")
 -- This will hold the configuration
 local config = wezterm.config_builder()
 
-config.automatically_reload_config = true
-config.quit_when_all_windows_are_closed = true
-
 config.max_fps = 120
 
+-- Window options
+config.automatically_reload_config = true
+config.quit_when_all_windows_are_closed = true
+config.enable_tab_bar = false
+config.window_decorations = "RESIZE"
+config.initial_cols = 150
+config.initial_rows = 40
+
+-- Font settings
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 15
 config.freetype_load_flags = "NO_HINTING"
-
+config.freetype_load_target = "Light"
+config.dpi = nil
+config.front_end = "WebGpu"
 config.line_height = 1.1
 
-config.enable_tab_bar = false
-config.window_decorations = "RESIZE"
-
 config.default_cursor_style = "SteadyUnderline"
-
 config.colors = {
 	foreground = "#CBE0F0",
 	background = "#011423",
