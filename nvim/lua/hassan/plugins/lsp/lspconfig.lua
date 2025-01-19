@@ -107,15 +107,20 @@ return {
 					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
 				})
 			end,
-			["jsonls"] = function()
-				lspconfig["jsonls"].setup({
-					capabilities = capabilities,
-					-- filetypes = { "json", "jsonc" },
-					settings = {
-						json = { format = { enable = false } },
-					},
-				})
-			end,
+			-- ["jsonls"] = function()
+			-- 	lspconfig["jsonls"].setup({
+			-- 		capabilities = capabilities,
+			-- 		-- filetypes = { "json", "jsonc" },
+			-- 		settings = {
+			-- 			json = { format = { enable = false } },
+			-- 		},
+			-- 		on_attach = function(client, _)
+			-- 			-- Explicitly disable LSP formatting for jsonls
+			-- 			client.server_capabilities.documentFormattingProvider = false
+			-- 			client.server_capabilities.documentRangeFormattingProvider = false
+			-- 		end,
+			-- 	})
+			-- end,
 			["emmet_ls"] = function()
 				-- configure emmet language server
 				lspconfig["emmet_ls"].setup({
