@@ -19,9 +19,9 @@ config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 15
 config.freetype_load_flags = "NO_HINTING"
 config.freetype_load_target = "Light"
-config.dpi = nil
+-- config.dpi = nil
 config.front_end = "WebGpu"
-config.line_height = 1.1
+config.line_height = 1.2
 
 config.default_cursor_style = "SteadyUnderline"
 config.colors = {
