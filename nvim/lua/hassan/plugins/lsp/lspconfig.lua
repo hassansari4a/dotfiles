@@ -2,6 +2,7 @@ return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
+		-- "saghen/blink.cmp",
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 		{ "folke/neodev.nvim", opts = {} },
@@ -69,6 +70,7 @@ return {
 
 		-- used to enable autocompletion (assign to every lsp server config)
 		local capabilities = cmp_nvim_lsp.default_capabilities()
+		-- local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 		-- Change the Diagnostic symbols in the sign column (gutter)
 		-- (not in youtube nvim video)
@@ -107,20 +109,6 @@ return {
 					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
 				})
 			end,
-			-- ["jsonls"] = function()
-			-- 	lspconfig["jsonls"].setup({
-			-- 		capabilities = capabilities,
-			-- 		-- filetypes = { "json", "jsonc" },
-			-- 		settings = {
-			-- 			json = { format = { enable = false } },
-			-- 		},
-			-- 		on_attach = function(client, _)
-			-- 			-- Explicitly disable LSP formatting for jsonls
-			-- 			client.server_capabilities.documentFormattingProvider = false
-			-- 			client.server_capabilities.documentRangeFormattingProvider = false
-			-- 		end,
-			-- 	})
-			-- end,
 			["emmet_ls"] = function()
 				-- configure emmet language server
 				lspconfig["emmet_ls"].setup({

@@ -78,10 +78,11 @@ eval "$(zoxide init --cmd cd zsh)"
 # The fuck
 eval $(thefuck --alias)
 eval $(thefuck --alias tf)
+
+
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Yazi
-
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
