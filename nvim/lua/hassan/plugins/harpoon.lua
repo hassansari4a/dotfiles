@@ -1,5 +1,6 @@
 return {
 	"ThePrimeagen/harpoon",
+	enabled = false,
 	keys = {
 		vim.keymap.set(
 			"n",

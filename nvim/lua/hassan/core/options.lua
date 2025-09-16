@@ -1,5 +1,5 @@
 vim.cmd("let  g:netrw_liststyle = 3")
-vim.diagnostic.config({ virtual_lines = true })
+-- vim.diagnostic.config({ virtual_lines = { current_line = true } })
 
 local opt = vim.opt -- for conciseness
 

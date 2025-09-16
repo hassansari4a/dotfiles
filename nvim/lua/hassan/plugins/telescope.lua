@@ -15,6 +15,16 @@ return {
 			pickers = { find_files = { hidden = true } },
 			defaults = {
 				path_display = { "smart" },
+				file_ignore_patterns = {
+					"node_modules",
+					".yarn/",
+					".git",
+					"__pycache__",
+					".mypy_cache",
+					".pytest_cache",
+					".venv",
+					"%.egg-info",
+				},
 				extenstions = { fzf = {} },
 				mappings = {
 					i = {

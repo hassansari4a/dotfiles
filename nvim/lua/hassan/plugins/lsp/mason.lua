@@ -1,7 +1,8 @@
 return {
 	"williamboman/mason.nvim",
+	branch = "v1.x",
 	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
+		{ "williamboman/mason-lspconfig.nvim", branch = "v1.x" },
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
@@ -28,15 +29,15 @@ return {
 			automatic_installation = true,
 			-- list of servers for mason to install
 			ensure_installed = {
-				-- "ts_ls",
-				"vtsls",
+				"ts_ls",
+				-- "vtsls",
 				"html",
 				"cssls",
 				"tailwindcss",
 				"svelte",
 				"lua_ls",
 				"graphql",
-				"emmet_ls",
+				-- "emmet_ls",
 				"prismals",
 				"pyright",
 			},
